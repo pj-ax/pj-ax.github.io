@@ -1,0 +1,59 @@
+﻿html {
+    background:url("../../images/hogans_xl.jpg") no-repeat center center fixed;
+    background-size:cover;
+}
+body {
+    margin:0;
+    padding:0;
+}
+fieldset {
+    color:aquamarine;
+    font-size:1.2em;
+    background-color:rgba(0,0,0,.4);
+}
+.field {
+    position:absolute;
+    top:25%;
+    left:35%;
+    width:30%;
+    border-radius:1em;
+}
+.field-results {
+    position:absolute;
+    top:30%;
+    left:25%;
+    width:50%;
+    text-align:center;
+    font-size:2.5em;
+    color:aquamarine;
+    background-color:rgba(0,0,0,.4);
+    border:1px solid aquamarine;
+    border-radius:1em;
+}
+.field-results div {
+    padding:40px;
+}
+#quiz {
+    display:inline-block;
+}
+#question {
+    margin:30px;
+    text-align:center;
+}
+label {
+    display:block;
+    margin:15px;
+}
+input[type=radio] {
+    margin-right:10px;
+    vertical-align: text-top;
+}
+#next-div {
+    text-align:center;
+}
+.rank {
+    position:absolute;
+    width:8%;
+    top:15px;
+    right:20px;
+}
