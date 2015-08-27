@@ -1,0 +1,34 @@
+﻿$('#spin').on('mousedown mouseup', function (event) {
+        if (event.type == 'mousedown') {
+            /*if (bet != 0) {
+                swap = setInterval(changeSlots, 100);
+            }
+            else {
+                $('#bet-div').effect('pulsate');
+                
+            }
+        }*/
+            swap = setInterval(changeSlots, 100);
+        }
+        if (event.type == 'mouseup') {
+            /*if (bet != 0) {
+                clearInterval(swap);
+            }*/
+            clearInterval(swap);
+        }
+    });
+
+	 function updateBet(event) {
+        if ($(event.target) == $('#bet-down')) {
+            if (bet >= 0) {
+                bet -= 100;
+                $('#bet-div').text(bet);
+            }
+        }
+        if ($(event.target) == $('#bet-up')) {
+            if (bet < total) {
+                bet += 100;
+                $('#bet-div').text(bet);
+            }
+        }
+    }

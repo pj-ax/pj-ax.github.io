@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="./jquery-1.11.3.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="./slots.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./slots.css" />
+    <title>Slots</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="gamebox">
+                <h2>PJA Slots</h2>
+                <div class="total monies">Total:<div class="monies-writes"><span>$</span><span id="total-span">10000</span></div></div>
+                <div class="bet monies">Bet:<div class="monies-writes" id="bet-div"><span>$</span><span id="bet-span">0</span></div></div>
+                <div class="bet-arrows">
+                    <button type="button" class="btn btn-default btn-sm" id="bet-down">
+                        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                    </button>
+                    <button type="button" class="btn btn-default btn-sm" id="bet-up">
+                        <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="slot-wrap">
+                    <div id="slot1" class="slot"></div>
+                    <div id="slot2" class="slot"></div>
+                    <div id="slot3" class="slot"></div>
+                </div>
+                <div class="jackpot" id="jpot">Jackpot:<span id="jpotn"><span>$</span><span id="jackpot-number">50000</span></span></div>
+                <div class="result"><div id="resulttxt"></div></div>
+                <div class="sbutton">
+                    <img src="./images/button_glossy_blue.png" id="spin" />
+                </div>    
+            </div>
+        </div>
+    </div>
+</body>
+</html>

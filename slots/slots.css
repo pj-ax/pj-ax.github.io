@@ -1,0 +1,101 @@
+﻿html,body {
+    background-color:deepskyblue;
+    margin:0;
+    padding:0;
+}
+h2 {
+    color:white;
+    text-align:center;
+}
+.gamebox {
+    position:relative;
+    background-color:black;
+    height:600px;
+    width:400px;
+    border-radius:4px;
+    margin:0 auto;
+}
+.monies {
+    display:inline-flex;
+    height:60px;
+    width:47%;
+    background-color:white;
+    border-radius:4px;
+    margin-left:7px;
+    font-weight:bold;
+}
+.monies-writes {
+    font-size:1.6em;
+    margin:auto;
+}
+.bet-arrows {
+    position:absolute;
+    right:6px;
+    top:105px;
+    display:inline-block;
+}
+.jackpot {
+    line-height:2.3em;
+    height:50px;
+    background-color:white;
+    width:96%;
+    border-radius:4px;
+    margin:0 auto;
+    margin-bottom: 20px;
+    font-weight:bold;
+    font-size:1.6em;
+}
+#jpotn {
+    position:relative;
+    margin-left:15%;
+}
+.slot-wrap {
+    display:flex;
+    margin-top:60px;
+    margin-bottom: 20px;
+}
+.slot {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    position:relative;
+    height:80px;
+    width:28%;
+    background-color: white;
+    margin: 0 auto;
+    box-shadow:inset 0px 0px 10px 2px rgba(0, 0, 0, 0.8);
+}
+.slot > img {
+    width:50%;
+    margin:auto;
+}
+.result {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    height:120px;
+    background-color:white;
+    width:96%;
+    border-radius:4px;
+    margin:0 auto;
+}
+.result-lose {
+    background-color:red;
+}
+.result-win {
+    background-color:gold;
+}
+#resulttxt {
+    font-weight:bold;
+    font-size:1.5em;
+    margin:auto;
+}
+.sbutton {
+    text-align:center;
+}
+#spin {
+    display:block;
+    width:25%;
+    margin:0 auto;
+    margin-top:30px;
+}
