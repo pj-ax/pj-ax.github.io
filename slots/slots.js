@@ -33,9 +33,7 @@ $(document).ready(function () {
         $('#slot3').children().attr('src', images[newNum3]);
         return;
     }
-    function checkResult(event) {
-        alert('drag ended');
-    }
+
     $('#bet-up').on('click', function (event) {
         if (bet < total) {
             bet += 100;
