@@ -1,0 +1,189 @@
+﻿html,body {
+  margin: 0;
+  padding: 0;
+  background-color:rgb(34,34,34);
+  height:100%;
+  width:100%;
+}
+nav li:hover {
+  background-color:black;
+}
+#nav-myname:hover {
+  background-color:black;
+}
+.home {    
+    padding-top:51px;
+    background: url(http://home.nightcpu.com/images/desert.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: brown;
+}
+.main-content {
+  height:855px;
+}
+.main-content > .container {
+    padding-top:5%;
+    padding-bottom:5%;
+}
+.home > .container {
+    padding-top:10%;
+}
+hr {
+  border-color:brown;
+  background-color:brown;
+  color:brown;
+  
+}
+ .button-links .btn {
+  background:wheat;
+  border:brown;
+  color:brown;
+  margin:5px;
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.6);
+}
+.button-links .btn:hover {
+  background-color:brown;
+  color:wheat;
+  transform:scale(1.1);
+  transition:0.2s;
+}
+a.btn:focus, a.btn:active {
+  background-color:khaki;
+  color:brown;
+  outline-color:brown;
+}
+@media (max-width:769px) {
+    .home,.portfolio, .about,.contact > .container {
+        padding-top:50%;
+}
+    .button-links > li {
+        display:block;
+    }
+}
+.about {
+  background: url(http://home.nightcpu.com/images/ohio.jpg) no-repeat center center fixed;
+  background-size:cover;
+  font-size:2vh;
+  color:rgb(34,34,34);
+}
+#about-image {
+  margin-top:10%;
+  margin-left:5%;
+  border:1px solid black;
+}
+.portfolio {
+  background: url(http://home.nightcpu.com/images/volcano.jpg) no-repeat center center fixed;
+  background-size:cover;
+  color:rgb(34,34,34);
+}
+.portos-wrap {
+  margin-bottom:25px;
+}
+div.portos {
+  position:relative;
+  display:inline-block;
+  width:33.3%;
+  height:250px;
+  margin:-2px;
+  border:1px solid rgb(34,34,34);
+}
+@media (max-width:769px) {
+    div.portos {
+        height:150px;
+    }
+}
+div.portos:hover {
+  transform:scaleY(1.001);
+  transition:0.2s;
+  box-shadow: 2px 4px 4px 4px rgba(0, 0, 0, 0.8);
+}
+.portos-img {
+  display:inline-block;
+  position:absolute;
+  width:90%;
+  height:100%;
+  left:5%;
+}
+.portos-img-wrap .after {
+  position:absolute;
+  width:90%;
+  height:100%;
+  background-color:rgba(34,34,34,.7);
+  top:0;
+  left:5%;
+  display:none;
+  color:white;
+  text-align:center;
+  font-size:3em;
+  line-height:5em;
+}
+@media (max-width:769px) {
+    .portos-img-wrap .after {
+        line-height:2.6em;
+    }
+}
+.portos-img-wrap:hover .after {
+  display:block;
+}
+.portos-footer {
+  display:flex;  
+  position:absolute;
+  height:30%;
+  width:90%;
+  background-color:rgb(38,38,38);
+  left:5%;
+  bottom:0px;
+  color:white;
+}
+.portos-footer span {
+    margin:auto;
+}
+.contact {
+  background: url(http://home.nightcpu.com/images/keyboard.jpg) no-repeat center center fixed;
+  background-size:cover;
+}
+.contact p {
+  font-size:2vh;
+  color:rgb(0,100,200);
+  margin-left:20%;
+}
+@media (max-width:769px) {
+    .contact p {
+        font-size:3vw;
+        margin-left:0;
+    }
+}
+.button-links-bottom .btn {
+  background:rgb(0,100,200);
+  border:brown;
+  color:black;
+  margin:5px;
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.6);
+}
+.button-links-bottom .btn:hover {
+  background:black;
+  color:rgb(0,100,200);
+  transform:scale(1.1);
+  transition:0.2s;
+}
+.button-links-bottom .btn:focus,.button-links-bottom .btn:active {
+  background-color:deepskyblue;
+  color:black;
+  outline-color:black;
+}
+ul.button-links-bottom li {
+  margin-bottom:5px;
+}
+footer {
+    padding:50px;
+}
+.footer-list a {
+  color:rgb(0,100,200);
+  text-decoration:none;
+}
+.footer-list > li {
+  margin-left:-8px;
+}
+.footer-copy {
+    margin-left: -8px;
+    color: white;
+}
