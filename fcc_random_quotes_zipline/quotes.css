@@ -9,6 +9,9 @@ h2 {
   margin-bottom: 1%;
   font-weight:600;
 }
+.col-lg-12 {
+    margin-top:20%;
+}
 .btn {
   background:rgb(203,203,203);
   color:rgb(34,34,34);
