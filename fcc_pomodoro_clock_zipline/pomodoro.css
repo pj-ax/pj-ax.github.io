@@ -1,0 +1,67 @@
+﻿* {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: rgba(10, 10, 10, .8);
+  color:rgba(140, 140, 40, .8);
+}
+.tomato {
+  margin-top:3%;
+  width:10%
+}
+.timers-row {
+  margin-top: 6%;
+}
+
+.headers {
+  font-size: 2em;
+}
+
+.controls {
+  cursor: pointer;
+  font-size: 1em;
+  vertical-align: middle;
+  padding: 8px;
+}
+
+#pomodoro {
+  font-size: 2em;
+  vertical-align: middle;
+}
+
+#break {
+  font-size: 2em;
+  vertical-align: middle;
+}
+.session-name {
+  margin-top:5%;
+  font-size:2em;
+}
+.work {
+  border-radius:2px;
+}
+.break {
+  border-radius:2px;
+}
+.work-session {
+  background-color:rgba(240, 30, 30, .4);
+  padding:10px
+}
+.break-session {
+  background-color:rgba(240, 30, 30, .4);
+  padding:10px;
+}
+.pomodoro-display {
+  margin-top: 6%;
+  font-size: 4vmax;
+  background: rgba(240, 30, 30, .4);
+  cursor:pointer;
+  width: 50%;
+}

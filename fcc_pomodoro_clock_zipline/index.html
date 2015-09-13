@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="pomodoro.css" />
+    <script src="pomodoro.js"></script>
+    <title>Pomodoro</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <img class="img-responsive img-circle tomato center-block" src="http://home.nightcpu.com/images/pomo.png" />
+                <h1 class="text-center">Pomodoro Technique Clock</h1>
+            </div>
+        </div>
+        <div class="row timers-row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="headers text-center">Work Length:</div>
+                <div class="text-center">
+                    <span class="glyphicon glyphicon-minus pbutton pbutton-down controls controls-left"></span>
+                    <span id="pomodoro"></span>
+                    <span class="glyphicon glyphicon-plus pbutton pbutton-up controls controls-right"></span>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="headers text-center">Break Length:</div>
+                <div class="text-center">
+                    <span class="glyphicon glyphicon-minus bbutton bbutton-down controls"></span>
+                    <span id="break"></span>
+                    <span class="glyphicon glyphicon-plus bbutton bbutton-up controls"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                <div class="session-name"><span class="work">WORK</span><span> | </span><span class="break">BREAK</span></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                <div class="pomodoro-display center-block jumbotron"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
