@@ -75,7 +75,7 @@ function runTimer() {
     else {
         if (!btimerOn) {
             seconds = breakTime;
-            if (pomodorosRan > 5) {
+            if (pomodorosRan > 4) {
                 breakTime += breakTime;
                 seconds = breakTime;
                 pomodorosRan = 0;
