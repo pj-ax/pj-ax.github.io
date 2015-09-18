@@ -1,65 +1,76 @@
-﻿html,body {
-  height:100%;
-  width:100%;
-  background-color:rgb(130,130,130);
-  color:rgb(34,34,34);
-  font-weight:700;
+﻿html, body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(130,130,130);
+    color: rgb(34,34,34);
+    font-weight: 700;
 }
-h2 {
-  margin-bottom: 1%;
-  font-weight:600;
-}
+
 .col-lg-12 {
-    margin-top:20%;
+    margin-top: 20%;
 }
+
+h2 {
+    margin-bottom: 1%;
+    font-weight: 600;
+}
+
 .btn {
-  background:rgb(203,203,203);
-  color:rgb(34,34,34);
-  border:rgb(203,203,203);
-  box-shadow:2px 2px 3px 4px rgba(34, 34, 34, 0.8);
-  font-weight:600;
-  margin-top:2%;
+    background: rgb(203,203,203);
+    color: rgb(34,34,34);
+    border: rgb(203,203,203);
+    box-shadow: 2px 2px 3px 4px rgba(34, 34, 34, 0.8);
+    font-weight: 600;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
+
 .col-lg-12 .btn:hover {
-  background:rgb(203,203,203);
-  color:rgb(34,34,34);
-  border:rgb(203,203,203);
+    background: rgb(203,203,203);
+    color: rgb(34,34,34);
+    border: rgb(203,203,203);
 }
+
 .col-lg-12 .btn:focus, .col-lg-12 .btn:active {
-  background:rgb(203,203,203);
-  color:rgb(34,34,34);
-  outline:0;
+    background: rgb(203,203,203);
+    color: rgb(34,34,34);
+    outline: 0;
 }
+
 .quote-wrap {
-  position:relative;
-  width:40%;
-  background-color:rgb(203,203,203);
-  margin-top:2%;
-  border-radius:14px;
-  box-shadow:2px 2px 3px 4px rgba(34, 34, 34, 0.8);
+    position: relative;
+    width: 40%;
+    background-color: rgb(203,203,203);
+    border-radius: 14px;
+    box-shadow: 2px 2px 3px 4px rgba(34, 34, 34, 0.8);
 }
+
 #quote {
-  margin-bottom:20px;
-  padding:10px 30px 30px 30px;
-  font-size:1em;
+    margin-bottom: 20px;
+    padding: 10px 30px 30px 30px;
+    font-size: 1em;
 }
+
 .quote-author {
-  display:inline-block;
-  position:absolute;
-  left:25px;
-  bottom:3px;
-  margin-top:5px;
-  font-size:.9em;
+    display: inline-block;
+    position: absolute;
+    left: 25px;
+    bottom: 3px;
+    margin-top: 5px;
+    font-size: .9em;
 }
-.quote-author::before {
-  content:'- '
-}
-.quote-author::after {
-  content:' -'
-}
+
+    .quote-author::before {
+        content: '- ';
+    }
+
+    .quote-author::after {
+        content: ' -';
+    }
+
 #twt {
-  position:absolute;
-  display:inline-block;
-  bottom:0;
-  right:15px;
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    right: 15px;
 }
