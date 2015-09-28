@@ -1,0 +1,150 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Orbitron:400,500,700);
+html, body {
+	margin:0;
+	padding:0;
+	height:100%;
+	width:100%;
+}
+body {
+	background-color:rgb(50,50,50);
+    color:rgb(200,200,240);
+}
+a, a:hover {
+	color:inherit;
+}
+.panel {
+    border:1px solid rgb(120,120,120);
+}
+.panel-heading {
+	font-size:1.1em;
+}
+.panel-body {
+	border:1px solid rgb(120,120,120);
+    padding:0;
+    margin:0;
+}
+.list-container {
+	background-color:rgb(80,80,80);
+	width:37%;
+}
+.search-wrap {
+    width:100%;
+    padding:2%;
+    background-color:rgb(120,120,120);
+}
+.search {
+    width:98%;
+    border-radius:10px;
+    padding:1%;
+}
+.controls-wrap {
+    display:table;
+    table-layout: fixed;
+    width:100%;
+    border-bottom:1px solid rgb(120,120,120);
+}
+.controls-wrap > div {
+    display:table-cell;
+    padding:2%;
+    font-family:Orbitron, sans-serif;
+    font-weight:500;
+}
+/*.controls-wrap > div:hover {
+    background-color:rgb(120,120,120);
+}*/
+.controls {
+    cursor:pointer;
+}
+.controls-active {
+    background-color:rgb(120,120,120);
+}
+.twitch-channels {
+    width:100%;
+}
+.channels {
+    padding:1%;
+    position:relative;
+    display:inline-block;
+    width:100%;
+    border:1px solid rgb(120,120,120);
+    cursor:pointer;
+}
+.channels:hover {
+    background-color:rgb(50,50,50);
+}
+.channel-logo {
+    width:14%;
+}
+.channel-name {
+    position:absolute;
+    left:37%;
+    top:35%;
+    font-family:Orbitron, sans-serif;
+    font-weight:700;
+    font-size:1.1em;
+}
+.status {
+    position:absolute;
+    font-size:2em;
+    top:28%;
+    right:2%;
+}
+.glyphicon-ban-circle {
+	color:red;
+}
+.glyphicon-ok-circle {
+	color:green;
+}
+.glyphicon-fire {
+	text-decoration:underline
+}
+::-webkit-input-placeholder::before {
+    font-family: fontAwesome;
+    content:'\f002  ';
+    color: grey;
+}
+::-moz-placeholder::before {
+    font-family: fontAwesome;
+    content:'\f002  ';
+    color: grey;
+}
+:-ms-input-placeholder::before {
+    font-family: fontAwesome;
+    content:'\f002  ';
+    color: grey;
+}
+input:-moz-placeholder::before  {
+    font-family: fontAwesome;
+    content:'\f002  ';
+    color: grey;
+}
+@media (max-width: 1366px) {
+	 .main, .panel {
+		width:420px;
+	}
+     .search-wrap, .controls-wrap {
+        width:418px;
+     }
+}
+.s404 {
+    background-color:firebrick;
+    color:yellow;
+    cursor:not-allowed;
+}
+.s404:hover {
+    background-color:firebrick;
+}
+.dhover {
+    display: none;
+    position: absolute;
+    width: 300px;
+    padding: 10px;
+    background: rgba(120,120,120,.6);
+    color: rgb(200,200,240);
+    border: 1px solid gray;
+    font-size: .9em;
+    font-weight:600;
+}
+.dhover > img {
+    width: 90%;
+}
