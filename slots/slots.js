@@ -3,37 +3,7 @@ var total;
 var bet;
 var swap;
 var jackpot;
-var latitude;
-var city;
-var locationData;
-var latLon;
-var weatherData;
-
-function getData() {
-
-    $.ajax({
-        method: "GET",
-        url: "http://ip-api.com/json/",
-        dataType: "jsonp",
-        success: function (data) {
-            locationData = JSON.parse(JSON.stringify(data));
-            console.log(locationData);
-            latLon = locationData.lat + ',' + locationData.lon;
-        }
-    }).done(function () {
-        $.simpleWeather({
-            location: latLon,
-            success: function (data) {
-                weatherData = JSON.parse(JSON.stringify(data));
-                console.log(weatherData);
-            }
-        });
-    });
-
-}
-
 $(document).ready(function () {
-    getData();
     images = ['./images/cherry.png', './images/gold.png', './images/Coins-512.png', './images/Lucky_Seven-512.png', './images/Horseshoe-512.png', './images/Bananas-512.png', './images/Jackpot-512.png', './images/gold_bar.png', './images/bar-512.png', './images/Diamond-512.png'];
     $('#slot1').append('<img src="' + images[ranSlotImage()] + '" />');
     $('#slot2').append('<img src="' + images[ranSlotImage()] + '" />');
@@ -125,9 +95,4 @@ $(document).ready(function () {
             }           
         }
     });
-
-    
-
-   
-    
 });
