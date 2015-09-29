@@ -61,7 +61,7 @@ $(document).ready(function () {
                 return;
             }
         }
-        if (event.type == 'mouseup'||event.type == 'mouseleave') {
+        if (event.type == 'mouseup' || event.type == 'mouseleave') {
             if (swap) {
                 clearInterval(swap);
                 swap = false;
