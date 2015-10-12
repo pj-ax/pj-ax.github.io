@@ -59,6 +59,7 @@ p.take-quiz {
     padding:0 2% 0 2%;
 }
 .questions-correct {
+    font-family: 'Sigmar One', cursive;
     padding:10%;
 }
 .quiz-button-wrap {
