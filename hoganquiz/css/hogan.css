@@ -1,44 +1,85 @@
-﻿html {
-    background:url("../images/hogans_xl.jpg") no-repeat center center fixed;
-    background-size:cover;
-}
-body {
+﻿@import url(https://fonts.googleapis.com/css?family=Bangers);
+@import url(https://fonts.googleapis.com/css?family=Sigmar+One);
+html, body {
     margin:0;
     padding:0;
+    height:100%;
+    width:100%;
 }
-fieldset {
+body {
+    background:url("http://home.nightcpu.com/hogan2/images/hogans_xl.jpg") no-repeat center center fixed;
+    background-size:cover;
+}
+.bflex {
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.buttons {
+    margin-top:2.4%;
+    position:absolute;
+    bottom:1%;
+    width:100%;
+}
+.start-button-wrap {
+    bottom:4%;
+}
+p.take-quiz {
+    font-size:2em;
+    padding:2%;
+    white-space:nowrap;
     color:aquamarine;
-    font-size:1.2em;
-    background-color:rgba(0,0,0,.4);
+    font-family: 'Bangers', cursive;
 }
-.field {
-    position:absolute;
-    top:25%;
-    left:35%;
-    width:30%;
-    border-radius:1em;
+#start {
+    display:block;
+    width:70%;
+    margin:0 auto;
 }
-.field-results {
-    position:absolute;
-    top:30%;
-    left:25%;
-    width:50%;
+.jumbotron {
+    width:440px;
+    min-width:440px;
+    position:relative;
+    margin:auto;
+    background-color:rgba(20,20,20,.3);
+    border-radius:15px;
     text-align:center;
-    font-size:2.5em;
-    color:aquamarine;
-    background-color:rgba(0,0,0,.4);
-    border:1px solid aquamarine;
-    border-radius:1em;
+    vertical-align:middle;
 }
-.field-results div {
-    padding:40px;
+.jumbotron > div, span {
+    font-size:2em;
+    font-family: 'Bangers', cursive;
+    color:aquamarine;
+}
+.question-number {
+    font-size:2.5em;
+}
+.question-now {
+    padding:0 2% 0 2%;
+}
+.questions-correct {
+    padding:10%;
+}
+.quiz-button-wrap {
+    bottom:.5%;
+}
+#prev {
+    display:inline-block;
+    margin:0 auto;
+    width:40%;
+}
+#next {
+    display:inline-block;
+    margin:0 auto;
+    width:40%;
 }
 #quiz {
     display:inline-block;
-}
-#question {
-    margin:30px;
-    text-align:center;
+    text-align:left;
+    font-size:1.7em;
+    font-family: 'Sigmar One', cursive;
+    color:aquamarine;
 }
 label {
     display:block;
@@ -46,14 +87,19 @@ label {
 }
 input[type=radio] {
     margin-right:10px;
-    vertical-align: text-top;
-}
-#next-div {
-    text-align:center;
+    vertical-align: central;
 }
 .rank {
-    position:absolute;
-    width:8%;
-    top:15px;
-    right:20px;
+    position: absolute;
+    width: 56px;
+    top: 10px;
+    right: 10px;
+}
+.again-button-wrap {
+    bottom:4%;
+}
+#again {
+    display:block;
+    width:70%;
+    margin:0 auto;
 }
