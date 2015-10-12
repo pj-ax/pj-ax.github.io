@@ -38,11 +38,11 @@ p.take-quiz {
     margin:0 auto;
 }
 .jumbotron {
-    width:440px;
+    width:540px;
     min-width:440px;
     position:relative;
     margin:auto;
-    background-color:rgba(20,20,20,.3);
+    background-color:rgba(10,10,10,.5);
     border-radius:15px;
     text-align:center;
     vertical-align:middle;
@@ -81,6 +81,7 @@ p.take-quiz {
     font-size:1.7em;
     font-family: 'Sigmar One', cursive;
     color:aquamarine;
+    padding-bottom:2%;
 }
 label {
     display:block;
@@ -91,10 +92,10 @@ input[type=radio] {
     vertical-align: central;
 }
 .rank {
-    position: absolute;
-    width: 56px;
+    position: relative;
+    width: 90px;
     top: 10px;
-    right: 10px;
+    margin:0 auto;
 }
 .again-button-wrap {
     bottom:4%;

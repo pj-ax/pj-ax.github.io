@@ -3,7 +3,7 @@
     var allQuestions = [{ question: "What Year Did Hogan's Heroes First Air?", choices: ["1960", "1955", "1965", "1962"], correctAnswer: 2 },
                     { question: "Who Was The Actor That Portrayed Col. Hogan?", choices: ["Reed Hadley", "Karl Langenscheidt", "James Arness", "Bob Crane"], correctAnswer: 3 },
                     { question: "Who Was Col. Klink's Commanding Officer?", choices: ["Major Hochstetter", "General Burkhalter", "Major Bonacelli", "Colonel Hogan"], correctAnswer: 1 },
-                    { question: "What Was The Name Of The POW Camp That Colonel Klink And Sergeant Shultz Were Stationed?", choices: ["POW Camp 23", "Camp 12", "Stalag 3", "Stalag 13"], correctAnswer: 3 },
+                    { question: "What Was The Name Of The POW Camp That Colonel Klink And Sergeant Shultz Were Stationed?", choices: ["POW Camp 23", "Camp 12", "Stalag 3", "Stalag 13"], correctAnswer: 3 },/*
                     { question: "What Was Louis LeBeau's Rank?", choices: ["General", "Corporal", "Colonel", "Sergeant"], correctAnswer: 1 },
                     { question: "What Character Did John Banner Portray In The Series?", choices: ["Major Hochstetter", "Newkirk", "Sergeant Shultz", "Major Bonacelli"], correctAnswer: 2 },
                     { question: "Who Brought The Guard Dogs To Camp?", choices: ["Captain Fritz", "Oscar Schnitzer", "Major Kiegel", "Tiger"], correctAnswer: 1 },
@@ -14,7 +14,7 @@
                     { question: "Where Were Sergeant Shultz And Colonel Klink Threatened To Be Sent By Their Superiors?", choices: ["Hollywood", "The Cooler", "Poland", "The Russian Front"], correctAnswer: 3 },
                     { question: "In What City Did Sergeant Kinchloe Live Before The War?", choices: ["Munsey, IN", "Cleveland, OH", "Detroit, MI", "Tuscumbia, AL"], correctAnswer: 2 },
                     { question: "Sergeant Shultz Saw What?", choices: ["Strudel", "Nothing", "POW's", "Red Cross Packages"], correctAnswer: 1 },
-                    { question: "What Was Peter Newkirk's Rank?", choices: ["Sergeant", "Corporal", "Major", "Private"], correctAnswer: 1 }
+                    { question: "What Was Peter Newkirk's Rank?", choices: ["Sergeant", "Corporal", "Major", "Private"], correctAnswer: 1 }*/
     ],
         answers = [],
         questionNow = 0,
@@ -33,8 +33,8 @@
         var $questionDiv;
         $questionDiv = $('<div>', {
             class: 'jumbotron questions',
-            html: '<span class="question-number">'+"Question: " + (questionNow + 1) + '</span>' + '<div class="question-now">' + allQuestions[questionNow].question + '</div>'
-        }).append('<div class="buttons quiz-button-wrap"><button type="button" class="btn btn-danger text-center prev" id="prev">Previous</button> <button type="button" class="btn btn-primary next" id="next">Next</button></div>');
+            html: '<span class="question-number">' + "Question: " + (questionNow + 1) + '</span>' + '<div class="question-now">' + allQuestions[questionNow].question + '</div>'
+        }).append('<div class="buttons quiz-button-wrap"><button type="button" class="btn btn-lg btn-danger text-center prev" id="prev">Previous</button> <button type="button" class="btn btn-lg btn-primary next" id="next">Next</button></div>');
         return $questionDiv.append(createForm);
     }
     function createForm() {
@@ -127,9 +127,9 @@
         }
         $results = $('<div>', {
             class: 'jumbotron results',
-            html: '<div class="questions-correct">' + "You Answered " + correct + " Question Correctly, For A Score Of: " + score + "%" + '<br>' + "Your Rank Is: " + rank + '</div>'
+            html: '<div class="questions-correct">' + "You Answered " + correct + " Question Correctly, For A Score Of: " + score + "%" + '<br>' + "Your Rank Is: " + '<br>' + rank + '</div>'
         }).append('<div class="buttons again-button-wrap"><button type="button" class="btn btn-lg btn-info text-center again" id="again">Try Again?</button></div>');;
-        $($results).append($rankImg);
+        $($results).prepend($rankImg);
         return $('.bflex').empty().append($results);
     }
     // End Functions \\
@@ -164,7 +164,6 @@
             }
         }
         else if (event.target.id == 'prev') {
-            console.log(questionNow);
             if (questionNow === 0) {
                 return;
             }
@@ -173,7 +172,6 @@
             console.log(answers[questionNow]);
             $('.bflex').empty().append(createDiv);
             if (answers[questionNow] >= 0) {
-                console.log('prev ' + $('.quiza:checked').val());
                 $('.quiza')[answers[questionNow]].setAttribute('checked', 'true');
             }
             getAnswers();
