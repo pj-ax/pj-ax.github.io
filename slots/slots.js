@@ -13,21 +13,21 @@ $(document).ready(function () {
     bet = +$('#bet-span').text();
     jackpot = +$('#jackpot-number').text();
 
-    function ranSlotImage() { return Math.floor(Math.random() * 10); return; }
+    function ranSlotImage() { return Math.floor(Math.random() * 10); }
     function changeSlots() {
-        var newNum1 = Math.floor(Math.random() * 10);
-        var newNum2 = Math.floor(Math.random() * 10);
-        var newNum3 = Math.floor(Math.random() * 10);
+        var newNum1 = ranSlotImage();
+        var newNum2 = ranSlotImage();
+        var newNum3 = ranSlotImage();
         while ($('#slot1').children().attr('src').indexOf(images[newNum1]) != -1) {
-            newNum1 = Math.floor(Math.random() * 10);
+            newNum1 = ranSlotImage();
         }
         $('#slot1').children().attr('src', images[newNum1]);
         while ($('#slot2').children().attr('src').indexOf(images[newNum2]) != -1) {
-            newNum2 = Math.floor(Math.random() * 10);
+            newNum2 = ranSlotImage();
         }
         $('#slot2').children().attr('src', images[newNum2]);
         while ($('#slot3').children().attr('src').indexOf(images[newNum3]) != -1) {
-            newNum3 = Math.floor(Math.random() * 10);
+            newNum3 = ranSlotImage();
         }
         $('#slot3').children().attr('src', images[newNum3]);
         return;
